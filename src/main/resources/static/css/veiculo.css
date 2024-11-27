@@ -1,0 +1,149 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background-color: rgba(157, 42, 44, 0.69);
+    padding: 10px;
+}
+
+.title h1 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    gap: 39px;
+}
+
+.sidebar li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.sidebar li:last-child {
+    margin-right: 0;
+}
+
+.container {
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 400px;
+    border: 30px solid #d9d9d9;
+    border-radius: 30px;
+    padding: 30px;
+    margin: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para manter os inputs lado a lado */
+.form-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.group label {
+    margin-bottom: 5px;
+}
+
+.form input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.form input::placeholder{
+    text-align: center;
+}
+
+.form-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.form-check {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 10px;
+   
+}
+.form-check label {
+    padding: 5px;
+    font-size: 20px;
+}
+button {
+    border-radius: 30px;
+    border-radius: 30px;
+    width: 70%;
+    height: 45px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+}   
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+input[type="radio"] {
+    transform: scale(2.0);
+    margin-right: 10px;
+}
+
+select{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+}
+select option{
+    text-align: center;
+}

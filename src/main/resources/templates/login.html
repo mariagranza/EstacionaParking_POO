@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" th:href="@{/css/login.css}">
+    </head>
+    <body>
+        <h1 class="title">Estaciona Parking</h1>
+        <main class="container">
+            <form action="/usuarios/login" method="post" class="form">
+                <img src="/img/user.png" alt="user">
+                <h1 class="Login">Login</h1>
+                <input type="text" name="cpf" id="CPF" placeholder="CPF" required>
+                <input type="password" name="senha" id="senha" placeholder="SENHA" required>
+                <button type="submit" class="btn">Entre</button>
+                <p th:if="${error}" th:text="${error}" style="color: red;"></p>
+            </form>
+        </main>
+    </body>
+</html>
